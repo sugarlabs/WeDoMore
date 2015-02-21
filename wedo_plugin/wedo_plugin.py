@@ -101,24 +101,6 @@ class Wedo_plugin(Plugin):
         self.tw.lc.def_prim('wedodistance', 0,
             Primitive(self.getDistance, TYPE_INT))
         
-        palette.add_block('wedogetMotorA',
-                style='box-style',
-                label=_('Motor A'),
-                help_string=_('returns the current speed of Motor A'),
-                value_block=True,
-                prim_name = 'wedogetMotorA')
-        self.tw.lc.def_prim('wedogetMotorA', 0,
-            Primitive(self.getMotorA, TYPE_INT))
-
-        palette.add_block('wedogetMotorB',
-                style='box-style',
-                label=_('Motor B'),
-                help_string=_('returns the current speed of Motor B'),
-                value_block=True,
-                prim_name = 'wedogetMotorB')
-        self.tw.lc.def_prim('wedogetMotorB', 0,
-            Primitive(self.getMotorB, TYPE_INT))
-
         palette.add_block('wedosetMotorA',
                 style = 'basic-style-1arg',
                 label = _('Motor A'),
